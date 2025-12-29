@@ -1,0 +1,39 @@
+1 - Factorial Program:
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+=============================================
+2 - Checking PrimeNo. or Not:
+Program:
+# Filename:  prime_number_checker.py
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+==========================================================
+3 - Celcius To Fahrenhiet:
+Program:
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
+==================================================================
+4 - Check Leap Year:
+Program:
+year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+=================================================================
